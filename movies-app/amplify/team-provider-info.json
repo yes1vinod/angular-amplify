@@ -10,6 +10,11 @@
       "StackName": "amplify-moviesapp-dev-142905",
       "StackId": "arn:aws:cloudformation:us-east-1:976044732337:stack/amplify-moviesapp-dev-142905/aab12340-26af-11eb-a586-0e43f2110cc5",
       "AmplifyAppId": "d3p3i5geh5qfzt"
+    },
+    "categories": {
+      "auth": {
+        "moviesapp9ef09a2e": {}
+      }
     }
   }
 }

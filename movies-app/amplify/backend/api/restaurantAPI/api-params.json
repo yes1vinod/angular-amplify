@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "moviefun1",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/items"
+        }
+    ],
+    "resourceName": "restaurantAPI",
+    "apiName": "restaurantAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "moviefun1"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-moviesapp-dev-142905-authRole",
+        "unAuthRoleName": "amplify-moviesapp-dev-142905-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "moviefun1",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

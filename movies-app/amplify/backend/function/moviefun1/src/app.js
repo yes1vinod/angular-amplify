@@ -48,10 +48,15 @@ async function listItems(){
  * Example get method *
  **********************/
 
-app.get('/item', function(req, res) {
+app.get('/items', function(req, res) {
   // Add your code here
   docClient.scan(params, function(err, data){
+    res.header( {headers: {
+      "Access-Control-Allow-Origin" : "*", // Required for CORS support to work
+      "Access-Control-Allow-Credentials" : true // Required for cookies, authorization headers with HTTPS 
+    }});
     if (err) {
+      
       res.send({
         success: false,
         message: err

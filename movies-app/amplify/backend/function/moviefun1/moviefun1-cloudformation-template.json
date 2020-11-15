@@ -76,7 +76,7 @@
         "Timeout": "25",
         "Code": {
           "S3Bucket": "amplify-moviesapp-dev-142905-deployment",
-          "S3Key": "amplify-builds/moviefun1-793565742b4538433338-build.zip"
+          "S3Key": "amplify-builds/moviefun1-2b36734a4b614a386d44-build.zip"
         }
       }
     },

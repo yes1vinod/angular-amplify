@@ -2,5 +2,14 @@
   <span>Vinod's Movie Rating</span>
 </mat-toolbar>
 <div style="padding:20px">
-  <router-outlet></router-outlet>
+
+  <amplify-authenticator>
+    <div>
+     
+      <amplify-sign-out></amplify-sign-out>
+    </div>
+    <router-outlet></router-outlet>
+  </amplify-authenticator>
+
+ 
 </div>
