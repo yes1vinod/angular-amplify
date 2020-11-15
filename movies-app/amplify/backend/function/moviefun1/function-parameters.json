@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "function": {
+      "moviefunction": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

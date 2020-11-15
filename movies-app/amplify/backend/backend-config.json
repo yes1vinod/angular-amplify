@@ -1,0 +1,24 @@
+{
+  "function": {
+    "moviefunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
+    },
+    "moviefun1": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "moviefunction",
+          "attributes": [
+            "Name"
+          ]
+        }
+      ]
+    }
+  }
+}
